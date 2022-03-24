@@ -1,0 +1,386 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.body {
+  background-color: black;
+  overflow-x: hidden; }
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: palegreen;
+  font-family: 'Poppins', sans-serif; }
+  header .logo {
+    color: darkblue;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 20px; }
+    header .logo span {
+      font-weight: 600;
+      color: black; }
+  header .nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 40%;
+    height: fit-content; }
+    header .nav-links li {
+      list-style: none; }
+      header .nav-links li a {
+        color: darkblue;
+        text-decoration: none;
+        letter-spacing: 1px;
+        font-size: 14px; }
+  header .hamburguesa {
+    display: none;
+    padding: 3px;
+    border: 1px solid darkblue;
+    border-radius: 5px; }
+    header .hamburguesa div {
+      width: 20px;
+      height: 3px;
+      background-color: darkblue;
+      margin: 5px;
+      transition: all 0.3s ease; }
+
+.main {
+  height: max-content;
+  background-image: linear-gradient(135deg, #fffafa 25%, #ffffff 25%, #ffffff 50%, #fffafa 50%, #fffafa 75%, #ffffff 75%, #ffffff 100%);
+  background-size: 56.57px 56.57px; }
+  .main h1 {
+    text-align: center;
+    padding: 0.5rem 2rem;
+    color: rgba(255, 255, 255, 0.897);
+    border-radius: 20px;
+    background: linear-gradient(-45deg, #ec0000, #c90000, #ff2d2d, #630000);
+    -webkit-animation: gradient 15s ease infinite;
+    animation: gradient 15s ease infinite;
+    background-size: 300% 300%; }
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+  .main .centrarCaja {
+    display: flex;
+    justify-content: top;
+    align-items: justify;
+    flex-direction: column;
+    font-size: 1.4rem; }
+  .main .galeria_contenedor {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 0.5rem; }
+    .main .galeria_contenedor .card img {
+      border-radius: 20px;
+      transition: all, 1s; }
+      .main .galeria_contenedor .card img:hover {
+        transform: scale(0.95, 0.95); }
+  .main .contenedor_comocomprar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .main .contenedor_comocomprar .comoComprar {
+      display: flex;
+      flex-direction: column;
+      height: fit-content;
+      border: 2px solid black;
+      width: fit-content;
+      border-radius: 20px;
+      overflow: hidden;
+      gap: 5px; }
+      .main .contenedor_comocomprar .comoComprar p {
+        margin-top: 0.7rem;
+        line-height: 3rem; }
+      .main .contenedor_comocomprar .comoComprar .comoComprar__1 {
+        padding: 3vh 3vw;
+        width: 80vw;
+        display: flex;
+        height: 20vh;
+        font-size: 2rem;
+        align-items: center;
+        background: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+        -webkit-animation: gradient 15s ease infinite;
+        animation: gradient 15s ease infinite;
+        background-size: 300% 300%; }
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+      .main .contenedor_comocomprar .comoComprar .comoComprar__2 {
+        padding: 3vh 3vw;
+        width: 80vw;
+        display: flex;
+        height: 20vh;
+        font-size: 2rem;
+        align-items: center;
+        background: linear-gradient(to right top, #6bd16b, #adc049, #d8ac47, #f3985f, #fb8982, #fd8a8a, #fe8b93, #ff8c9b, #ff9589, #ffa278, #ffb269, #fbc45f);
+        -webkit-animation: gradient 15s ease infinite;
+        animation: gradient 15s ease infinite;
+        background-size: 300% 300%; }
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+      .main .contenedor_comocomprar .comoComprar .comoComprar__3 {
+        padding: 3vh 3vw;
+        width: 80vw;
+        display: flex;
+        height: 20vh;
+        font-size: 2rem;
+        align-items: center;
+        background: linear-gradient(to right top, #f1ff56, #d9fc64, #c2f972, #aef47f, #9bef8c, #a3e47c, #aad96e, #b0ce61, #ccb743, #e49c3a, #f47e46, #fb5f5f);
+        -webkit-animation: gradient 15s ease infinite;
+        animation: gradient 15s ease infinite;
+        background-size: 300% 300%; }
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+      .main .contenedor_comocomprar .comoComprar .comoComprar__4 {
+        padding: 3vh 3vw;
+        width: 80vw;
+        display: flex;
+        height: 20vh;
+        font-size: 2rem;
+        align-items: center;
+        background: linear-gradient(to right top, #99c0fd, #a1b8ff, #adafff, #bda4fc, #cf98f4, #e088e7, #f177d5, #ff63bf, #ff449b, #ff1d71, #ff0043, #ff0000);
+        -webkit-animation: gradient 15s ease infinite;
+        animation: gradient 15s ease infinite;
+        background-size: 300% 300%; }
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+      .main .contenedor_comocomprar .comoComprar .comoComprar__num {
+        font-size: 6rem;
+        text-align: center;
+        margin-left: 2rem;
+        margin-right: 2rem; }
+  .main .botonup, .main .botonup-enviar, .main .botonup-limpiar, .main .botonup-ver {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 20px;
+    z-index: 0;
+    background: #fff;
+    overflow: hidden;
+    border: 2px solid #d90429;
+    color: #d90429; }
+    .main .botonup:hover, .main .botonup-enviar:hover, .main .botonup-limpiar:hover, .main .botonup-ver:hover {
+      color: #fff; }
+    .main .botonup:hover:after, .main .botonup-enviar:hover:after, .main .botonup-limpiar:hover:after, .main .botonup-ver:hover:after {
+      width: 100%; }
+    .main .botonup:after, .main .botonup-enviar:after, .main .botonup-limpiar:after, .main .botonup-ver:after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      transition: all 0.3s ease;
+      left: 0;
+      top: 0;
+      width: 0;
+      height: 100%;
+      background: #d90429; }
+  .main .botonup-enviar {
+    border: 2px solid #00b900;
+    color: #00b900; }
+    .main .botonup-enviar:after {
+      background: #00b900; }
+  .main .botonup-limpiar {
+    border: 2px solid #ff7300;
+    color: #ff7300; }
+    .main .botonup-limpiar:after {
+      background: #ff7300; }
+  .main .botonup-ver {
+    border: 2px solid black;
+    color: black; }
+    .main .botonup-ver:after {
+      background: black; }
+  .main .img-impresora {
+    border-radius: 20px; }
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(to bottom, #630000, black);
+  color: aliceblue; }
+
+.boton-facebook {
+  background-image: linear-gradient(to top, black, #1b1b1b);
+  padding: 10px;
+  color: #FFF;
+  border-radius: 5px;
+  transition: all 0.5s; }
+  .boton-facebook:hover {
+    background-image: linear-gradient(to top, #0003c7, #3c70ff);
+    color: #FFF; }
+
+.boton-instagram {
+  background-image: linear-gradient(to top, black, #1b1b1b);
+  padding: 10px;
+  color: #FFF;
+  border-radius: 5px;
+  transition: all 0.5s; }
+  .boton-instagram:hover {
+    background-image: linear-gradient(to top right, #ffa600, #8c00ff);
+    color: #FFF; }
+
+.boton-whatsapp {
+  background-image: linear-gradient(to top, black, #1b1b1b);
+  padding: 10px;
+  color: #FFF;
+  border-radius: 5px;
+  transition: all 0.5s; }
+  .boton-whatsapp:hover {
+    background-image: linear-gradient(to top, #0c9200, #28ff68);
+    color: #FFF; }
+
+.boton-twitter {
+  background-image: linear-gradient(to top, black, #1b1b1b);
+  padding: 10px;
+  color: #FFF;
+  border-radius: 5px;
+  transition: all 0.5s; }
+  .boton-twitter:hover {
+    background-image: linear-gradient(to top, #007bac, #15d0ff);
+    color: #FFF; }
+
+.boton-email {
+  background-image: linear-gradient(to top, black, #1b1b1b);
+  padding: 10px;
+  color: #FFF;
+  border-radius: 5px;
+  transition: all 0.5s; }
+  .boton-email:hover {
+    background-image: linear-gradient(to top, #ff0055, #3b2668);
+    color: #FFF; }
+
+@media (max-width: 768px) {
+  header .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: palegreen;
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    z-index: 3; }
+    header .nav-links li {
+      opacity: 0; }
+  header .hamburguesa {
+    display: block;
+    cursor: pointer; }
+  header .nav-active {
+    transform: translateX(0%); }
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px); }
+    to {
+      opacity: 1;
+      transform: translateX(0px); } }
+  header .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px); }
+  header .toggle .line2 {
+    opacity: 0; }
+  header .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px); }
+  .footer {
+    flex-direction: column-reverse;
+    text-align: center; }
+    .footer p {
+      font-size: 0.8rem;
+      margin-top: 0.5rem; }
+  .main .contenedor_comocomprar .comoComprar p {
+    margin-top: 0.3rem;
+    line-height: 1rem; }
+  .main .contenedor_comocomprar .comoComprar .comoComprar__num {
+    font-size: 2.8rem;
+    text-align: center;
+    margin-left: 1rem;
+    margin-right: 1rem; }
+  .main .contenedor_comocomprar .comoComprar .comoComprar__1, .main .contenedor_comocomprar .comoComprar .comoComprar__2, .main .contenedor_comocomprar .comoComprar .comoComprar__3, .main .contenedor_comocomprar .comoComprar .comoComprar__4 {
+    height: 15vh;
+    font-size: 1.2rem; }
+  .main .centrarCaja {
+    font-size: 1rem; } }
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  header .nav-links {
+    width: 50%; } }

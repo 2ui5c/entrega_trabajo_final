@@ -17,10 +17,16 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- Mi CSS -->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body class="body">
-    <!-- Navbar de Bootstrap -->
+    <!-- Navbar de Bootstrap
     <header class="navbar sticky-top navbar-expand-lg navbar-dark nav_estilo" ;>
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
@@ -52,22 +58,49 @@
                 </ul>
             </div>
         </div>
-    </header>
+    </header> -->
     <!-- Fin Navbar de Bootstrap -->
     <!-- Carousel -->
+    <header>
+        <div class="logo">
+            <h4>Impresiones<span>3D</span></h4>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="pages/galeria.html">Galeria</a>
+            </li>
+            <li>
+                <a href="pages/preguntas.html">Preguntas</a>
+            </li>
+            <li>
+                <a href="pages/nosotros.html">Nosotros</a>
+            </li>
+            <li>
+                <a href="pages/contacto.html">Contacto</a>
+            </li>
+        </ul>
+        <div class="hamburguesa">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </header>
     <main class="main p-3">
         <div class="row py-2">
             <h1>Bienvenidos!</h1>
         </div>
         <div class="row py-2">
-            <div class="col-sm-6 col-lg-6 col-md-5 px-3 centrarCaja">
+            <div class="col-sm-6 col-lg-6 col-md-6 px-3 centrarCaja">
                 <p>Bienvenidos a nuestra página. Somos fabricantes de productos impresos en 3D, realizados con
                     materiales de primera calidad e impresoras de última generación</p>
                 <p>Contamos con un amplio stock de impresiones y variedad de colores.</p>
                 <p>Si no encontrás lo que buscas, podés pedirnos el diseño que más te guste y lo imprimimos para vos!
                 </p>
             </div>
-            <div class="col-lg-6 col-md-7 col-sm-6">
+            <div class="col-lg-6 col-md-6 col-sm-6">
                 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -150,6 +183,8 @@
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
         crossorigin="anonymous"></script>
     <!-- Fin JavaScript de Bootstrap -->
+    <!-- link js de nav responsive -->
+    <script src="js/nav.js"></script>
 </body>
 
 </html>

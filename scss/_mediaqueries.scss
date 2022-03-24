@@ -1,4 +1,83 @@
-@media (max-width: 576px) {
+// @media (max-width: 576px) {
+//     .footer {
+//         flex-direction: column-reverse;
+//         text-align: center;
+//         p {
+//             font-size: 0.8rem;
+//             margin-top: 0.5rem;
+//         }
+//     }
+//     .main {
+//         .contenedor_comocomprar {
+//             .comoComprar {
+//                 p {
+//                     margin-top: 0.3rem;
+//                     line-height: 1rem;
+//                 }
+//                 .comoComprar__num {
+//                     font-size: 2.8rem;
+//                     text-align: center;
+//                     margin-left: 1rem;
+//                     margin-right: 1rem;
+//                 }
+//                 .comoComprar__1, .comoComprar__2, .comoComprar__3, .comoComprar__4 {
+//                     height: 15vh;
+//                     font-size: 1.2rem;
+//                 }
+//             }
+//         }
+//         .centrarCaja {
+//             font-size: 1rem;
+//         }
+//     }
+// }
+
+@media (max-width: 768px) {
+    header {
+        .nav-links {
+            position: absolute;
+            right: 0px;
+            height: 92vh;
+            top: 8vh;
+            background-color: palegreen;
+            display: flex;
+            flex-direction: column;
+            width: 65%;
+            transform: translateX(100%);
+            transition: transform 0.5s ease-in;
+            z-index: 3;
+            li {
+                opacity: 0;
+            };
+        }
+        .hamburguesa {
+            display: block;
+            cursor: pointer;
+        }
+        .nav-active {
+            transform: translateX(0%);
+        }
+        @keyframes navLinkFade{
+            from{
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0px);
+            }
+        }
+        .toggle .line1 {
+            transform: rotate(-45deg) translate(-5px,6px);
+        }        
+        .toggle .line2 {
+            opacity: 0;
+        }
+        .toggle .line3 {
+            transform: rotate(45deg) translate(-5px,-6px);
+        }
+    }
+
     .footer {
         flex-direction: column-reverse;
         text-align: center;
@@ -32,36 +111,11 @@
     }
 }
 
-@media (min-width:577px) and (max-width: 768px) {
-    .footer {
-        flex-direction: column-reverse;
-        text-align: center;
-        p {
-            font-size: 0.9rem;
-            margin-top: 0.6rem;
+@media (min-width:769px) and (max-width: 1200px) {
+    header {
+        .nav-links {
+            width: 50%;
         }
     }
-    .main {
-        .contenedor_comocomprar {
-            .comoComprar {
-                p {
-                    margin-top: 0.4rem;
-                    line-height: 1.1rem;
-                }
-                .comoComprar__num {
-                    font-size: 3rem;
-                    text-align: center;
-                    margin-left: 1rem;
-                    margin-right: 1rem;
-                }
-                .comoComprar__1, .comoComprar__2, .comoComprar__3, .comoComprar__4 {
-                    height: 16vh;
-                    font-size: 1.3rem;
-                }
-            }
-        }
-        .centrarCaja {
-            font-size: 1.2rem;
-        }
-    }
-}
+}    
+
