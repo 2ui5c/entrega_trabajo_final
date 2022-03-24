@@ -1,0 +1,147 @@
+.main {
+    height: max-content;
+    background-image: linear-gradient(135deg, #fffafa 25%, #ffffff 25%, #ffffff 50%, #fffafa 50%, #fffafa 75%, #ffffff 75%, #ffffff 100%);
+    background-size: 56.57px 56.57px;
+    h1 {
+        text-align: center;
+        padding: 0.5rem 2rem;
+        color: rgba(255, 255, 255, 0.897);
+        @include borderradius;
+        background: $titulo_deg;
+        @include animacionfondocajas;
+    }
+    .centrarCaja {
+        display: flex;
+        justify-content: top; 
+        align-items: justify;
+        flex-direction: column;
+        font-size: 1.4rem;
+    }
+    //main galeria
+    .galeria_contenedor{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 0.5rem;
+        .card {
+            img {
+                @include borderradius;
+                transition: all, 1s;
+                &:hover {
+                    transform: scale(0.95,0.95)
+                }
+            }
+        }
+    }
+    //main preguntas
+    .contenedor_comocomprar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .comoComprar {
+            display: flex;
+            flex-direction: column;
+            height: fit-content;
+            border: 2px solid black;
+            width: fit-content;
+            @include borderradius;
+            overflow: hidden;
+            gap: 5px;
+            p {
+                margin-top: 0.7rem;
+                line-height: 3rem;
+            }
+            
+            .comoComprar__1 {
+                @include cajascomocomprar;
+                background: $deg_comprar_1;
+                @include animacionfondocajas;
+            }
+            .comoComprar__2 {
+                @include cajascomocomprar;
+                background: $deg_comprar_2;
+                @include animacionfondocajas;
+            }
+            .comoComprar__3 {
+                @include cajascomocomprar;
+                background: $deg_comprar_3;
+                @include animacionfondocajas;
+            }
+            .comoComprar__4 {
+                @include cajascomocomprar;
+                background: $deg_comprar_4;
+                @include animacionfondocajas;
+            }
+            .comoComprar__num {
+                font-size: 6rem;
+                text-align: center;
+                margin-left: 2rem;
+                margin-right: 2rem;
+            }
+        }
+    }
+    // MAIN BOTONES
+    .botonup {
+        min-width: 130px;
+        height: 40px;
+        color: #fff;
+        padding: 5px 10px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+        outline: none;
+        @include borderradius;
+        z-index: 0;
+        background: #fff;
+        overflow: hidden;
+        border: 2px solid #d90429;
+        color: #d90429;
+        &:hover {
+            color: #fff;
+        }
+        &:hover:after {
+            width: 100%;
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            transition: all 0.3s ease;
+            left: 0;
+            top: 0;
+            width: 0;
+            height: 100%;
+            background: #d90429;
+        }
+    }
+    .botonup-enviar {
+        @extend .botonup;
+        border: 2px solid $color_enviar;
+        color: $color_enviar;
+        &:after {
+            background: $color_enviar;
+        }
+    }
+    .botonup-limpiar {
+        @extend .botonup;
+        border: 2px solid $color_limpiar;
+        color: $color_limpiar;
+        &:after {
+            background: $color_limpiar;
+        }
+    }
+    .botonup-ver {
+        @extend .botonup;
+        border: 2px solid $color_ver;
+        color: $color_ver;
+        &:after {
+            background: $color_ver;
+        }
+    }
+    .img-impresora {
+        @include borderradius;
+    }
+}

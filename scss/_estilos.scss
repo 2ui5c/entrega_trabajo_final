@@ -1,0 +1,71 @@
+// GENERALES
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    background-color: black;
+}
+
+@mixin borderradius {
+    border-radius: 20px;
+}
+
+@mixin cajascomocomprar {
+    padding: 3vh 3vw;
+    width: 80vw;
+    display: flex;
+    height: 20vh;
+    font-size: 2rem;
+    align-items: center;
+}
+
+//MAIN 
+$color_limpiar: rgb(255, 115, 0);
+$color_enviar: rgb(0, 185, 0);
+$color_ver: rgb(0, 0, 0);
+$titulo_deg: linear-gradient(-45deg, rgb(236, 0, 0), rgb(201, 0, 0), rgb(255, 45, 45), rgb(99, 0, 0));
+
+//PREGUNTAS GRADIENTES
+$deg_comprar_1: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+$deg_comprar_2: linear-gradient(to right top, #6bd16b, #adc049, #d8ac47, #f3985f, #fb8982, #fd8a8a, #fe8b93, #ff8c9b, #ff9589, #ffa278, #ffb269, #fbc45f);
+$deg_comprar_3: linear-gradient(to right top, #f1ff56, #d9fc64, #c2f972, #aef47f, #9bef8c, #a3e47c, #aad96e, #b0ce61, #ccb743, #e49c3a, #f47e46, #fb5f5f);
+$deg_comprar_4: linear-gradient(to right top, #99c0fd, #a1b8ff, #adafff, #bda4fc, #cf98f4, #e088e7, #f177d5, #ff63bf, #ff449b, #ff1d71, #ff0043, #ff0000);
+
+@mixin animacionfondocajas {
+    -webkit-animation: gradient 15s ease infinite;
+    animation: gradient 15s ease infinite;
+    background-size: 300% 300%;
+    @-webkit-keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+}
+
+// FOOTER
+$fondo_facebook: linear-gradient(to top, rgb(0, 3, 199), rgb(60, 112, 255));
+$fondo_instagram: linear-gradient(to top right, rgb(255, 166, 0), rgb(140, 0, 255));
+$fondo_whatsapp: linear-gradient(to top, rgb(12, 146, 0), rgb(40, 255, 104));
+$fondo_twitter: linear-gradient(to top, rgb(0, 123, 172), rgb(21, 208, 255));
+$fondo_email: linear-gradient(to top, rgb(255, 0, 85), rgb(59, 38, 104));
