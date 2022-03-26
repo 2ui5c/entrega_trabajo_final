@@ -1,15 +1,22 @@
 header {
+    z-index: 3;
+    position: fixed;
+    width: 100vw;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 8vh;
-    background-color:palegreen;
+    min-height: 7vh;
+    background-color:#98fb98;
     font-family: 'Poppins', sans-serif;
     .logo {
         color: darkblue;
         text-transform: uppercase;
         letter-spacing: 2px;
-        font-size: 20px;
+        font-size: 25px;
+        a {
+            text-decoration: none;
+            color: darkblue;
+        }
         span {
             font-weight: 600;
             color: black;
@@ -30,12 +37,17 @@ header {
                 font-size: 14px;
             }
         }
+        .nav-contacto {
+            font-size: 10px;
+            display: none;
+        }
     }
     .hamburguesa {
         display: none;
         padding: 3px;
-        border: 1px solid darkblue;
+        border: 2px solid darkblue;
         border-radius: 5px;
+        padding-bottom: 0.5rem;
         div{
             width: 20px;
             height: 3px;

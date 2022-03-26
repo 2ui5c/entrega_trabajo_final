@@ -1,12 +1,11 @@
 const navSlide = () => {
-    const hamburguesa = document.querySelector ('.hamburguesa');
-    const nav = document.querySelector('.nav-links');
-    const navLinks = document.querySelectorAll('.nav-links li');
+const hamburguesa = document.querySelector ('.hamburguesa');
+const nav = document.querySelector('.nav-links');
+const navLinks = document.querySelectorAll('.nav-links li');
     
-    hamburguesa.addEventListener('click',()=>{
-    //Toggle nav
+hamburguesa.addEventListener("click", () => {
+        //Toggle nav
         nav.classList.toggle('nav-active');
-
     //animate Links
         navLinks.forEach((link, index) => {
             if (link.style.animation) {
@@ -17,7 +16,7 @@ const navSlide = () => {
         });
         // animacion hamburguesa
         hamburguesa.classList.toggle('toggle');
-    });
+});
 
 }
 

@@ -26,44 +26,9 @@
 </head>
 
 <body class="body">
-    <!-- Navbar de Bootstrap
-    <header class="navbar sticky-top navbar-expand-lg navbar-dark nav_estilo" ;>
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <img src="img/logo.png" alt="Logo Impresiones 3D" class="d-inline-block align-text-center mx-2 navLogo">
-                <h3 class="d-inline-block align-text-center animate-charcter">Impresiones 3D</h3>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-5">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/galeria.html">Galería</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/nosotros.html">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/preguntas.html">Preguntas Frecuentes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/contacto.html">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </header> -->
-    <!-- Fin Navbar de Bootstrap -->
-    <!-- Carousel -->
     <header>
-        <div class="logo">
-            <h4>Impresiones<span>3D</span></h4>
+        <div class="logo fade-in">
+            <p><a href="index.html">Impresiones<span>3D</span></a></p>
         </div>
         <ul class="nav-links">
             <li>
@@ -88,18 +53,11 @@
             <div class="line3"></div>
         </div>
     </header>
-    <main class="main p-3">
+    <main class="main">
         <div class="row py-2">
             <h1>Bienvenidos!</h1>
         </div>
         <div class="row py-2">
-            <div class="col-sm-6 col-lg-6 col-md-6 px-3 centrarCaja">
-                <p>Bienvenidos a nuestra página. Somos fabricantes de productos impresos en 3D, realizados con
-                    materiales de primera calidad e impresoras de última generación</p>
-                <p>Contamos con un amplio stock de impresiones y variedad de colores.</p>
-                <p>Si no encontrás lo que buscas, podés pedirnos el diseño que más te guste y lo imprimimos para vos!
-                </p>
-            </div>
             <div class="col-lg-6 col-md-6 col-sm-6">
                 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
                     <div class="carousel-inner">
@@ -128,6 +86,13 @@
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
+            </div>
+            <div class="col-sm-6 col-lg-6 col-md-6 px-3 py-2 centrarCaja">
+                <p>Bienvenidos a nuestra página. Somos fabricantes de productos impresos en 3D, realizados con
+                    materiales de primera calidad e impresoras de última generación</p>
+                <p>Contamos con un amplio stock de impresiones y variedad de colores.</p>
+                <p>Si no encontrás lo que buscas, podés pedirnos el diseño que más te guste y lo imprimimos para vos!
+                </p>
             </div>
         </div>
     </main>
@@ -184,7 +149,7 @@
         crossorigin="anonymous"></script>
     <!-- Fin JavaScript de Bootstrap -->
     <!-- link js de nav responsive -->
-    <script src="js/nav.js"></script>
+    <script defer src="js/nav.js"></script>
 </body>
 
 </html>

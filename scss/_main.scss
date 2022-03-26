@@ -1,13 +1,14 @@
 .main {
-    height: max-content;
-    background-image: linear-gradient(135deg, #fffafa 25%, #ffffff 25%, #ffffff 50%, #fffafa 50%, #fffafa 75%, #ffffff 75%, #ffffff 100%);
-    background-size: 56.57px 56.57px;
+    background-color: #d90429;
+    padding: 7vh 6vw 1vh 6vw ;
+    // height: max-content;
+    background-image: $titulo_deg;
     h1 {
         text-align: center;
         padding: 0.5rem 2rem;
-        color: rgba(255, 255, 255, 0.897);
+        color: darkblue;
         @include borderradius;
-        background: $titulo_deg;
+        // background: $titulo_deg;
         @include animacionfondocajas;
     }
     .centrarCaja {
@@ -97,8 +98,8 @@
         z-index: 0;
         background: #fff;
         overflow: hidden;
-        border: 2px solid #d90429;
-        color: #d90429;
+        border: 2px solid black;
+        color: black;
         &:hover {
             color: #fff;
         }
@@ -114,34 +115,34 @@
             top: 0;
             width: 0;
             height: 100%;
-            background: #d90429;
+            background: black;
         }
     }
     .botonup-enviar {
         @extend .botonup;
-        border: 2px solid $color_enviar;
-        color: $color_enviar;
+        border: 2px solid $color_verde;
+        color: $color_verde;
         &:after {
-            background: $color_enviar;
+            background: $color_verde;
         }
     }
     .botonup-limpiar {
         @extend .botonup;
-        border: 2px solid $color_limpiar;
-        color: $color_limpiar;
+        border: 2px solid $color_azul;
+        color: $color_azul;
         &:after {
-            background: $color_limpiar;
+            background: $color_azul;
         }
     }
     .botonup-ver {
         @extend .botonup;
-        border: 2px solid $color_ver;
-        color: $color_ver;
+        border: 2px solid $color_verde;
+        color: $color_verde;
         &:after {
-            background: $color_ver;
+            background: $color_verde;
         }
     }
     .img-impresora {
         @include borderradius;
-    }
+    }  
 }

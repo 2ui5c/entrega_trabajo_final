@@ -32,30 +32,42 @@
 //     }
 // }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+
     header {
+        .logo {
+            font-size: 22px;
+        }
         .nav-links {
+            padding-bottom: 30%;
             position: absolute;
             right: 0px;
-            height: 92vh;
-            top: 8vh;
-            background-color: palegreen;
+            height: 93vh;
+            top: 7vh;
+            background-color: rgba(245, 245, 245, 0.75);
+            backdrop-filter: blur(8px);
             display: flex;
             flex-direction: column;
-            width: 65%;
-            transform: translateX(100%);
-            transition: transform 0.5s ease-in;
-            z-index: 3;
+            width: 100%;
+            left: 100%;
+            transition: left 0.6s ease-in;
+            z-index: 2;
+            font-weight: 600;
             li {
                 opacity: 0;
             };
+            .nav-contacto {
+                display: block;
+                text-align: center;
+                opacity: 0;
+            }
         }
         .hamburguesa {
             display: block;
             cursor: pointer;
         }
         .nav-active {
-            transform: translateX(0%);
+            left: calc(0%);
         }
         @keyframes navLinkFade{
             from{
