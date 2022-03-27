@@ -166,7 +166,7 @@ header {
     flex-direction: column;
     padding: 0px 10px;
     gap: 5px;
-    margin-bottom: 10px; }
+    margin-bottom: 15px; }
     .main .index-seccion .index-secciones-encabezado {
       background-image: linear-gradient(to right, white, palegreen, white);
       text-align: center; }
@@ -393,7 +393,7 @@ header {
   border-radius: 5px;
   transition: all 0.5s; }
   .boton-instagram:hover {
-    background-image: linear-gradient(to top right, #ffa600, #8c00ff);
+    background-image: linear-gradient(to top right, #ffa600, magenta);
     color: #FFF; }
 
 .boton-whatsapp {
@@ -423,7 +423,7 @@ header {
   border-radius: 5px;
   transition: all 0.5s; }
   .boton-email:hover {
-    background-image: linear-gradient(to top, #ff0055, #3b2668);
+    background-image: linear-gradient(to top, #cc587f, #3b2668);
     color: #FFF; }
 
 @media screen and (max-width: 768px) {
