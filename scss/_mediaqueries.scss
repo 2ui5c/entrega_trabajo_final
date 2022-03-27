@@ -39,7 +39,7 @@
             font-size: 22px;
         }
         .nav-links {
-            padding-bottom: 30%;
+            padding-bottom: 20%;
             position: absolute;
             right: 0px;
             height: 93vh;
@@ -55,6 +55,9 @@
             font-weight: 600;
             li {
                 opacity: 0;
+                a {
+                    font-size: 1.1rem
+                }
             };
             .nav-contacto {
                 display: block;
@@ -118,6 +121,11 @@
             }
         }
         .centrarCaja {
+            font-size: 1rem;
+        }
+        .botonup {
+            min-width: 110px;
+            font-weight: 600;
             font-size: 1rem;
         }
     }

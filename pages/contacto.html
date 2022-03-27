@@ -17,7 +17,7 @@
     <!-- Mi CSS -->
     <link rel="stylesheet" href="../css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;900&display=swap"
-    rel="stylesheet">
+        rel="stylesheet">
 </head>
 
 <body class="body">
@@ -38,7 +38,7 @@
             <li>
                 <a href="nosotros.html">Nosotros</a>
             </li>
-            <li>
+            <li class="nav-link-active">
                 <a href="contacto.html">Contacto</a>
             </li>
         </ul>
@@ -53,7 +53,8 @@
             <h1>Contacto</h1>
         </div>
         <div class="centrarCaja">
-            <p>En esta sección podrás solicitar tu presupuesto o enviarnos tu consulta. Te estaremos respondiendo a la brevedad.</p>
+            <p>En esta sección podrás solicitar tu presupuesto o enviarnos tu consulta. Te estaremos respondiendo a la
+                brevedad.</p>
         </div>
         <div>
             <form>
@@ -76,13 +77,29 @@
                         <label for="formFile" class="form-label">Adjuntar archivo</label>
                         <input class="form-control" type="file" id="formFile">
                     </div>
-                    <div class="col-auto">
-                        <button type="submit" class="btn botonup-enviar">Enviar</button>
-                        <button type="reset" class="btn botonup-limpiar">Limpiar</button>
+                    <div class="d-flex justify-content-center py-3">
+                        <button type="submit" class="btn botonup-enviar mx-2">Enviar</button>
+                        <button type="reset" class="btn botonup-limpiar mx-2">Limpiar</button>
                     </div>
                 </fieldset>
             </form>
         </div>
+        <div>
+            <hr>
+        </div>
+        <div class="row py-2">
+            <h1>Nuestra ubicación</h1>
+        </div>
+        <div class="d-flex flex-column align-items-center">
+            <div class="col-12 centrarCaja my-2">
+                <p>Estamos ubicados en la localidad de Berazategui, en la Provincia de Buenos Aires. Hacemos envíos
+                    express a ciertas zonas del sur del Gran Buenos Aires. Puede consultarnos por su zona.</p>
+            </div>
+            <div class="col-12">
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26221.74357284873!2d-58.21590361477659!3d-34.76269724072905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32f348c2fbdbf%3A0x80217bd276933f07!2sBerazategui%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1648345096984!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
     </main>
     <!-- Footer -->
     <footer class="footer px-5 py-3">

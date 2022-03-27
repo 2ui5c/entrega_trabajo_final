@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/favicon.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
     <!-- Herramientas SEO -->
     <meta name="description"
         content="Página web de Impresiones 3D. Entrá para conocer nuestros productos y realizar tus pedidos. Hacemos envíos a todo el país. Tu consulta no nos molesta!">
@@ -31,7 +31,7 @@
             <p><a href="index.html">Impresiones<span>3D</span></a></p>
         </div>
         <ul class="nav-links">
-            <li>
+            <li class="nav-link-active">
                 <a href="index.html">Home</a>
             </li>
             <li>
@@ -57,8 +57,16 @@
         <div class="row py-2">
             <h1>Bienvenidos!</h1>
         </div>
+        <div class="row px-3 py-2 centrarCaja">
+            <p class="my-1">Bienvenidos a nuestra página. Somos fabricantes de productos impresos en 3D, realizados con
+                materiales de primera calidad e impresoras de última generación</p>
+            <p class="my-1">Contamos con un amplio stock de impresiones y variedad de colores.</p>
+            <p class="my-1">Si no encontrás lo que buscas, podés pedirnos el diseño que más te guste y lo imprimimos
+                para vos!
+            </p>
+        </div>
         <div class="row py-2">
-            <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="col-md-7 col-sm-12 px-3">
                 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -87,12 +95,85 @@
                     </button>
                 </div>
             </div>
-            <div class="col-sm-6 col-lg-6 col-md-6 px-3 py-2 centrarCaja">
-                <p>Bienvenidos a nuestra página. Somos fabricantes de productos impresos en 3D, realizados con
-                    materiales de primera calidad e impresoras de última generación</p>
-                <p>Contamos con un amplio stock de impresiones y variedad de colores.</p>
-                <p>Si no encontrás lo que buscas, podés pedirnos el diseño que más te guste y lo imprimimos para vos!
-                </p>
+            <div class="col-md-5 col-sm-12 px-3 d-flex flex-column justify-content-center newsletter ">
+                <h1>Newsletter</h1>
+                <p> Suscribite a nuestro newsletter y recibí todas las novedades y ofertas que tenemos para vos</p>
+                <div class="mt-4">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="emailAddress" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">Nunca compartiremos tu dirección de email.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Nombre y apellido</label>
+                            <input type="password" class="form-control" id="name">
+                        </div>
+                        <button type="submit" class="btn botonup-limpiar">Suscribirme :)</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="my-2">
+            <hr>
+        </div>
+        <div class="row mt-3">
+            <div class="index-seccion col-md-6 col-sm-12">
+                <div class="row index-secciones-encabezado">
+                    <h3>Conocé nuestros trabajos</h3>
+                </div>
+                <div class="row index-secciones-descripcion">
+                    <p>Entrá para conocer algunos de nuestros trabajos impresos, todos se encuentran disponibles</p>
+                    <a href="pages/galeria.html">
+                        <img class="img-fluid" src="img/secciones/productos.jpg" alt="Nuestros productos">
+                    </a>
+                </div>
+            </div>
+            <div class="index-seccion col-md-6 col-sm-12">
+                <div class="row index-secciones-encabezado">
+                    <h3>Buscalo en Thingiverse</h3>
+                </div>
+                <div class="row index-secciones-descripcion">
+                    <p>Descargá cualquier archivo del catálogo de Thingiverse, contactanos y te lo imprimimos!</p>
+                    <a href="https://www.thingiverse.com/" target="blank">
+                        <img class="img-fluid" src="img/secciones/thingiverse.jpg" alt="Thingiverse logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row py-3 area-seccion">
+            <div class="index-seccion col-md-4 col-sm-12">
+                <div class="row index-secciones-encabezado">
+                    <h3>Preguntas Frecuentes</h3>
+                </div>
+                <div class="row index-secciones-descripcion">
+                    <p>Consulta las preguntas frecuentes y nuestro proceso de compra</p>
+                    <a href="pages/preguntas.html">
+                        <img class="img-fluid" src="img/secciones/imagen_2022-03-27_011601.png" alt="Preguntas frecuentes">
+                    </a>
+                </div>
+            </div>
+            <div class="index-seccion col-md-4 col-sm-12">
+                <div class="row index-secciones-encabezado">
+                    <h3>Sobre Nosotros</h3>
+                </div>
+                <div class="row index-secciones-descripcion">
+                    <p>Te invitamos a conocer quienes somos y qué te podemos ofrecer</p>
+                    <a href="pages/nosotros.html">
+                        <img class="img-fluid" src="img/secciones/printer.png" alt="Sobre Nosotros">
+                    </a>
+                </div>
+            </div>
+            <div class="index-seccion col-md-4 col-sm-12">
+                <div class="row index-secciones-encabezado">
+                    <h3>Contactanos</h3>
+                </div>
+                <div class="row index-secciones-descripcion">
+                    <p>Escribinos para hacernos tu consulta y resolver tus dudas</p>
+                    <a href="pages/contacto.html">
+                        <img class="img-fluid" src="img/secciones/contactus.jpg" alt="Contactenos">
+                    </a>
+                </div>
             </div>
         </div>
     </main>

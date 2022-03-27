@@ -58,8 +58,7 @@ header {
   justify-content: space-around;
   align-items: center;
   min-height: 7vh;
-  background-color: #98fb98;
-  font-family: 'Poppins', sans-serif; }
+  background-color: #98fb98; }
   header .logo {
     color: darkblue;
     text-transform: uppercase;
@@ -69,7 +68,7 @@ header {
       text-decoration: none;
       color: darkblue; }
     header .logo span {
-      font-weight: 600;
+      font-weight: 700;
       color: black; }
   header .nav-links {
     display: flex;
@@ -78,15 +77,25 @@ header {
     width: 40%;
     height: fit-content; }
     header .nav-links li {
-      list-style: none; }
+      list-style: none;
+      transition: all 0.5s; }
       header .nav-links li a {
-        color: darkblue;
+        padding: 5px;
+        color: black;
         text-decoration: none;
         letter-spacing: 1px;
-        font-size: 14px; }
-    header .nav-links .nav-contacto {
-      font-size: 10px;
-      display: none; }
+        font-size: 14px;
+        font-weight: 600;
+        transition: all 0.3s; }
+        header .nav-links li a:hover {
+          color: blue; }
+      header .nav-links li:hover {
+        transform: translateY(-3px); }
+    header .nav-links .nav-link-active {
+      border-bottom: 2px solid green; }
+      header .nav-links .nav-link-active a {
+        color: darkblue;
+        font-weight: 600; }
   header .hamburguesa {
     display: none;
     padding: 3px;
@@ -105,6 +114,8 @@ header {
   padding: 7vh 6vw 1vh 6vw;
   background-image: linear-gradient(to top, #dffadf, #e7fae7); }
   .main h1 {
+    text-transform: uppercase;
+    font-weight: 600;
     text-align: center;
     padding: 0.5rem 2rem;
     color: darkblue;
@@ -144,6 +155,34 @@ header {
       transition: all, 1s; }
       .main .galeria_contenedor .card img:hover {
         transform: scale(0.95, 0.95); }
+  .main .newsletter {
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 2px 1px 10px rgba(0, 0, 0, 0.5); }
+    .main .newsletter input {
+      border: darkblue solid 1px; }
+  .main .index-seccion {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px;
+    gap: 5px;
+    margin-bottom: 10px; }
+    .main .index-seccion .index-secciones-encabezado {
+      background-image: linear-gradient(to right, white, palegreen, white);
+      text-align: center; }
+      .main .index-seccion .index-secciones-encabezado h3 {
+        font-weight: 600; }
+    .main .index-seccion .index-secciones-descripcion {
+      text-align: center;
+      font-size: 1rem;
+      color: darkblue; }
+      .main .index-seccion .index-secciones-descripcion img {
+        margin-top: 10px;
+        border-radius: 10px;
+        box-shadow: 2px 1px 10px rgba(0, 0, 0, 0.5);
+        transition: all .4s; }
+        .main .index-seccion .index-secciones-descripcion img:hover {
+          transform: translateY(-5px); }
   .main .contenedor_comocomprar {
     display: flex;
     flex-direction: column;
@@ -322,6 +361,13 @@ header {
       background: #84da84; }
   .main .img-impresora {
     border-radius: 15px; }
+  .main .mapa {
+    width: 100%; }
+    .main .mapa iframe {
+      width: 100%;
+      height: 400px;
+      border: 2px solid black;
+      border-radius: 15px; }
 
 .footer {
   display: flex;
@@ -384,7 +430,7 @@ header {
   header .logo {
     font-size: 22px; }
   header .nav-links {
-    padding-bottom: 30%;
+    padding-bottom: 20%;
     position: absolute;
     right: 0px;
     height: 93vh;
@@ -400,6 +446,8 @@ header {
     font-weight: 600; }
     header .nav-links li {
       opacity: 0; }
+      header .nav-links li a {
+        font-size: 1.1rem; }
     header .nav-links .nav-contacto {
       display: block;
       text-align: center;
@@ -440,6 +488,10 @@ header {
     height: 15vh;
     font-size: 1.2rem; }
   .main .centrarCaja {
+    font-size: 1rem; }
+  .main .botonup, .main .botonup-enviar, .main .botonup-limpiar, .main .botonup-ver {
+    min-width: 110px;
+    font-weight: 600;
     font-size: 1rem; } }
 
 @media (min-width: 769px) and (max-width: 1200px) {
