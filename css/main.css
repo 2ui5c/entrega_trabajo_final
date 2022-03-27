@@ -27,6 +27,29 @@
   100% {
     opacity: 1; } }
 
+.accordion {
+  width: 93%;
+  background-color: palegreen;
+  border-radius: 15px;
+  border: black solid 2px;
+  overflow: hidden; }
+
+.accordion-button {
+  background-color: #caffca; }
+
+.accordion-button:focus {
+  border-color: green;
+  background-color: palegreen;
+  box-shadow: 0 0 10px 0.1rem green; }
+
+.accordion-button:not(.collapsed) {
+  color: darkgreen;
+  background-color: palegreen; }
+
+.accordion-body {
+  background-color: none;
+  color: darkblue; }
+
 header {
   z-index: 3;
   position: fixed;

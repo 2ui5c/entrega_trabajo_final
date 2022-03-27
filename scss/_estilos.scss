@@ -99,3 +99,31 @@ $fondo_email: linear-gradient(to top, rgb(255, 0, 85), rgb(59, 38, 104));
     opacity: 1;
     }
 }
+
+
+// Acordion preguntas frecuentes
+.accordion {
+    width: 93%;
+    background-color: palegreen;
+    border-radius: 15px;
+    border: black solid 2px;
+    overflow: hidden;
+}
+
+.accordion-button {
+    background-color: rgb(202, 255, 202);
+}
+
+.accordion-button:focus {
+    border-color: green;
+    background-color: palegreen;
+    box-shadow: 0 0 10px 0.1rem green;
+}
+.accordion-button:not(.collapsed) {
+    color: darkgreen;
+    background-color: palegreen;
+}
+.accordion-body {
+    background-color: none;
+    color: darkblue;
+}
